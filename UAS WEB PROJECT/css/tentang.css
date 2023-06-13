@@ -1,0 +1,184 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: black;
+}
+
+.logo {
+	flex: 1px;
+	color: red;
+	font-size: 30px;
+}
+
+.logo span {
+	color: #fff;
+}
+
+.header {
+  background-color: #87CEEB;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	position: relative;
+}
+
+.navbar a {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+  }
+  
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: .5s;
+    opacity: 0;
+    transition-delay: .2s;
+}
+
+  .navbar a:hover {
+    color: #fff;
+}
+
+.navbar a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
+
+.hero {
+    position: relative;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .hero-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('https://e0.pxfuel.com/wallpapers/529/565/desktop-wallpaper-travel-mobile-global.jpg');
+    background-position: center;
+    background-size: cover;
+    opacity: 0.8;
+  }
+  
+  .container {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+  
+  .container h1 {
+    color: #111
+  }
+  
+  .hero-title {
+    font-size: 48px;
+    font-weight: bold;
+    color: #fff;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .hero-subtitle {
+    font-size: 24px;
+    color: #fff;
+    margin: 0;
+    max-width: 600px;
+  }
+  
+  .hero-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: blue;
+    color: #000000;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    margin-top: 30px;
+    text-decoration: none;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  .hero-button:hover {
+    background-color: #111;
+    color: #ffffff;
+    transform: translateY(-3px);
+  }
+  
+  
+  .about {
+    background-color: #87CEEB;
+    padding: 50px 0;
+  }
+  
+  .about .container {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
+  .about .section-title {
+    font-size: 36px;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  
+  .about-description, .section-description {
+    font-size: 18px;
+    color: #333;
+    text-align: justify;
+    margin: 0;
+  }
+  
+  p {
+    text-indent: 1em;
+  }
+
+  .footer .credit {
+    text-align: center;
+    margin-top: 1rem;
+    padding: 1rem;
+    padding-top: 1rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .footer .credit span {
+    color: #219150;
+  }

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="shortcut icon" href="images/signup.png" type="image/png">
+    <link rel="stylesheet" href="signup.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+<body>
+    <div class="background"></div>
+        <div class="container">
+        <div class="content">
+            <h2><i class='bx bxl-firebase'></i>JelajahNusantara</h2>
+
+            <div class="text-sci">
+                <h2 class="logo">Welcome ! <br><span>To Our Website</span></h2>
+                <p> Paket Tour Travel Bersahabat </p>
+                
+                <div class="sosial-icon">
+                    <a href="#"><i class='bx bxl-facebook' ></i></a>
+                    <a href="#"><i class='bx bxl-instagram'></i></a>
+                    <a href="#"><i class='bx bxl-google'></i></a>
+                    <a href="#"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="logreg-box">
+            <div class="form-box login">
+                    <form action="signup_proses.php" method="POST">
+
+                    <h2>SIGN UP</h2>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-user'></i></i></span>
+                        <input type="text" id="name" name="name" required>
+                        <label for="name">Nama</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bx-envelope'></i></span>
+                        <input type="email" id="email" name="email" required>
+                        <label for="email">Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" id="password" name="password" required>
+                        <label for="password" >Password</label>
+                    </div>
+
+                    <div class="input-box">
+                        <span class="icon"><i class='bx bxs-lock-alt'></i></span>
+                        <input type="password" id="password" name="password_confirmation">
+                        <label for="password_confirmation">Ulangi Password</label>
+                    </div>
+
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                    </div>
+
+                    <button type="submit" class="btn">Sign Up</button>
+                    
+                    <div class="login-register">
+                        <p>Sudah Memiliki Akun ? <br> <a href="login.php" class="register-link">LOGIN</a></p>
+                    </div>
+                </form>
+            </div>
+        <script src="js/login.js"></script>
+    </body>
+</html>

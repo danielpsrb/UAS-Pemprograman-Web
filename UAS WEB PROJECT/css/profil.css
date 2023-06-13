@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,700');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: blueviolet;
+}
+
+.logo {
+	flex: 1px;
+	color: red;
+	font-size: 30px;
+}
+
+.logo span {
+	color: #fff;
+}
+
+.header {
+    background-color: #87CEEB;
+	height: 100px;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 5%;
+	position: relative;
+}
+
+.navbar a {
+    position: relative;
+    display: inline-block;
+    font-size: 16px;
+    color: #111;
+    text-decoration: none;
+    font-weight: bold;
+    margin-right: 30px;
+    text-transform: uppercase;
+    transition: color 0.3s ease-in-out;
+  }
+  
+.navbar a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    transform: translateY(10px);
+    transition: .5s;
+    opacity: 0;
+    transition-delay: .2s;
+}
+
+  .navbar a:hover {
+    color: #e4e4e4;
+}
+
+.navbar a:hover::after {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+h2 {
+    text-align: center;
+    color: #111;
+}
+  
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 20px;
+}
+
+.card {
+    border: 2px solid #FF8400;
+    background-color: aliceblue;
+    padding: 10px;
+    width: 250px;
+    text-align: center;
+}
+
+.card img {
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.card h3 {
+    color: #111;
+}
+
+@media only screen and (max-width: 768px) {
+.container {
+flex-direction: column;
+align-items: center;
+}
+
+.card {
+width: 80%;
+margin-bottom: 20px;
+}
+
+.card img {
+width: 100%;
+height: auto;
+}
+}
