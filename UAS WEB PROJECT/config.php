@@ -1,9 +1,9 @@
 <?php
 
 $host = "localhost";
-$dbname = "id20905997_tourtravel_db";
-$username = "id20905997_daniel";
-$password = "Asusrog070809.";
+$dbname = "db_name";
+$username = "db_userhost";
+$password = "db_pass";
 
 $mysqli = new mysqli(hostname: $host,
                      username: $username,
